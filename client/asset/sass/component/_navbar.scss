@@ -1,0 +1,114 @@
+.navbar{
+  &.theme{
+    .navbar-toggle{
+      border: 2px solid $color-shade-1;
+      .icon-bar{
+        background: $color-shade-1;
+      }
+    }
+    .navbar-collapse{
+      border: none;
+    }
+    .navbar-wrapper{
+      background: $color-main-1;
+    }
+    .navbar-brand{
+      .icon, span, p, a{
+        color: $color-shade-1;
+      }
+      img.logo{
+        display: inline-table;
+        vertical-align: top;
+        &.circle,
+        &.block{
+          height: 100%;
+        }
+      }
+      &.small{
+        .icon, span, p, a{
+          font-size: 14px;
+        }
+      }
+    }
+    .navbar-nav{
+      @include max-phone(){
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+    .navbar-right{
+      @include min-tablet(){
+        margin-right: 0px;
+      }
+    }
+    .navbar-form{
+      @include max-phone(){
+        margin-top: 0px;
+        margin-bottom: 0px;
+        .text-search{
+          background: $color-shade-1;
+        }
+      }
+    }
+    ul.nav{
+      li{
+        a{
+          .icon,
+          span{
+            color: $color-shade-1;
+          }
+          &:hover, &:focus, &.active{
+            background-color: $color-main-4;
+          }
+          &.dropdown-toggle{
+            &:hover, &:focus{
+              background-color: $color-main-4 !important;
+            }
+            @include max-phone(){
+              span{
+                display: inline-block !important;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        > .dropdown-menu{
+          box-shadow: none;
+          border-radius: 0px;
+          padding: 0px;
+          @include max-phone(){
+            background: $color-shade-1;
+            .icon, li, span, a{
+              color: $color-main-1 !important;
+            }
+          }
+          li{
+            &.divider{
+              margin: 0px;
+              padding: 0px;
+            }
+            a{
+              padding: 10px 15px;
+            }
+          }
+        }
+        &.inverse{
+          a{
+            &:hover, &:focus, &.active{
+              background-color: $color-main-6;
+            }
+          }
+        }
+      }
+    }
+    .inverse{
+      background: $color-shade-1;
+      .icon, a, span, p, li{
+        color: $color-main-1 !important;
+      }
+    }
+    .icon{
+      margin-right: 5px;
+    }
+  }
+}
