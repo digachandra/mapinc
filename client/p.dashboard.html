@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Prompt">
+  <link rel="stylesheet" href="asset/css/nanoscroller.min.css">
   <link rel="stylesheet" href="asset/css/style.min.css">
 </head>
 <body id="page-dashboard">
   <div class="lyt-fullscreen">
     <div class="google-map lyt-fullscreen"><div id="dashboard-map" class="map-block"></div></div>
     <nav class="navbar navbar-fixed-top theme">
-      <div class="container"><div class="row"><div class="col-sm-8 col-sm-offset-2 no-gutter">
+      <div class="container"><div class="container-wrapper">
         <div class="navbar-wrapper">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mapinc-navbar-top" aria-expanded="false">
@@ -40,10 +41,10 @@
             </form>
           </div>
         </div>
-      </div></div></div>
+      </div></div>
     </nav>
     <nav class="navbar navbar-fixed-bottom theme">
-      <div class="container"><div class="row"><div class="col-sm-8 col-sm-offset-2 no-gutter">
+      <div class="container"><div class="container-wrapper">
         <div class="navbar-wrapper">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mapinc-navbar-bottom" aria-expanded="false">
@@ -89,13 +90,68 @@
             </ul>
           </div>
         </div>
-      </div></div></div>
+      </div></div>
     </nav>
+    <section class="detail-wrapper">
+      <div class="wrapper-action top">
+        <div class="row no-gutter">
+          <div class="col-xs-9">
+            <div class="block">
+              <div class="wrapper-outer"><div class="wrapper-inner">
+                <h4>New Record</h4>
+              </div></div>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-action btn-info detail-close">
+              <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-content">
+        <div class="nano">
+          <div class="nano-content">
+            <div class="content-inner">
+              <form>
+                <div class="form-group">
+                  <label for="txt-pin-name">Pin Name</label>
+                  <input id="txt-pin-name" type="text" class="form-control" placeholder="Pin Name" required>
+                </div>
+                <hr />
+                <div class="form-group">
+                  <label for="0000-condition">Sales Condition</label>
+                  <select id="0000-condition" class="form-control" required>
+                    <option>Greater than</option>
+                    <option>Less than</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="0000-range">Sales Range</label>
+                  <input id="0000-range" type="number" class="form-control" placeholder="Range" min="0" required>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-action bottom">
+        <div class="row no-gutter">
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-action btn-danger">DELETE</button>
+          </div>
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-action btn-success">SAVE</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/lodash/4.16.2/lodash.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_muvCxO4FqTWepNvaArWY1CmrSAyRp3w&callback=initMap&libraries=drawing" async="" defer="defer"></script>
+  <script src="asset/js/jquery.nanoscroller.min.js"></script>
   <script src="asset/js/core.min.js"></script>
   <script src="asset/js/p.dashboard.min.js"></script>
 </body>
