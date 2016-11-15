@@ -259,6 +259,58 @@ form:not(.navbar-form):not(.form-inline) .form-group {
   width: 100%;
   height: 100%; }
 
+.modal {
+  z-index: 100001; }
+  @media (max-width: 767px) {
+    .modal > .wrapper-outer > .wrapper-inner {
+      padding: 0px 10px; } }
+  .modal .close {
+    outline: none !important; }
+  .modal .modal-dialog .modal-content {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none !important; }
+    .modal .modal-dialog .modal-content .modal-header,
+    .modal .modal-dialog .modal-content .modal-body,
+    .modal .modal-dialog .modal-content .modal-footer {
+      border: 0px; }
+  .modal .modal-dialog .modal-content.with-border-bottom {
+    border-bottom: 5px solid transparent; }
+  .modal .nano.height-sm {
+    max-height: 260px; }
+  .modal.vertical-align > .wrapper-outer {
+    display: table;
+    width: 100%;
+    height: 100%; }
+    .modal.vertical-align > .wrapper-outer > .wrapper-inner {
+      display: table-cell;
+      vertical-align: middle; }
+  .modal.vertical-align .modal-dialog {
+    margin: 0px auto; }
+  .modal.vertical-align.top > .wrapper-outer > .wrapper-inner {
+    vertical-align: top; }
+  .modal.vertical-align.bottom > .wrapper-outer > .wrapper-inner {
+    vertical-align: bottom; }
+  .modal.modal-danger .modal-content {
+    background: #f2dede;
+    border: 4px solid #ebccd1;
+    color: #a94442; }
+  .modal.modal-warning .modal-content {
+    background: #fcf8e3;
+    border: 4px solid #faebcc;
+    color: #8a6d3b; }
+  .modal.modal-success .modal-content {
+    background: #dff0d8;
+    border: 4px solid #d6e9c6;
+    color: #3c763d; }
+  .modal.modal-info .modal-content {
+    background: #bce8f1;
+    border: 4px solid #d9edf7;
+    color: #31708f; }
+
+.modal-backdrop.in {
+  z-index: 100000; }
+
 #page-dashboard .navbar {
   margin: 0px; }
 

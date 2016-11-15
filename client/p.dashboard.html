@@ -103,7 +103,7 @@
             </div>
           </div>
           <div class="col-xs-3">
-            <button type="button" class="btn btn-action btn-info detail-close">
+            <button id="btn-detail-close" type="button" class="btn btn-action btn-info detail-close">
               <i class="fa fa-times fa-lg" aria-hidden="true"></i>
             </button>
           </div>
@@ -122,8 +122,8 @@
                 <div class="form-group">
                   <label for="0000-condition">Sales Condition</label>
                   <select id="0000-condition" class="form-control" required>
-                    <option>Greater than</option>
-                    <option>Less than</option>
+                    <option value="GT">Greater than</option>
+                    <option value="LT">Less than</option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -138,14 +138,44 @@
       <div class="wrapper-action bottom">
         <div class="row no-gutter">
           <div class="col-xs-6">
-            <button type="button" class="btn btn-action btn-danger">DELETE</button>
+            <button type="button" class="btn btn-action btn-danger" data-toggle="modal" data-target="#dashboard-modal-delete">DELETE</button>
           </div>
           <div class="col-xs-6">
-            <button type="button" class="btn btn-action btn-success">SAVE</button>
+            <button id="btn-marker-save"  type="button" class="btn btn-action btn-success" data-toggle="modal" data-target="#dashboard-modal-save">SAVE</button>
           </div>
         </div>
       </div>
     </section>
+  </div>
+  <div id="dashboard-modal-delete" class="modal modal-danger vertical-align fade" role="dialog">
+    <div class="wrapper-outer"><div class="wrapper-inner">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"><strong>Are you sure want to delete marker?</strong></h4>
+          </div>
+          <div class="modal-footer">
+            <button id="btn-marker-delete" type="button" class="btn btn-danger btn-block" data-dismiss="modal">DELETE</button>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </div>
+  <div id="dashboard-modal-save" class="modal modal-success vertical-align fade" role="dialog">
+    <div class="wrapper-outer"><div class="wrapper-inner">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"><strong>Save marker success</strong></h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div></div>
   </div>
   <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
