@@ -1,0 +1,22 @@
+.datepicker{
+	position: absolute;
+	bottom: 100%;
+	.ui-widget{
+		.ui-widget-content{
+			border-radius: 0px !important;
+			height: 215px !important;
+		}
+	}
+	&.top{
+		bottom: 100%;
+	}
+	&.bottom{
+		top: 100%;
+	}
+	&.left{
+		left: 0px;
+	}
+	&.right{
+		right: 0px;
+	}
+}

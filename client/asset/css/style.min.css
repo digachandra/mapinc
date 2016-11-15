@@ -311,6 +311,21 @@ form:not(.navbar-form):not(.form-inline) .form-group {
 .modal-backdrop.in {
   z-index: 100000; }
 
+.datepicker {
+  position: absolute;
+  bottom: 100%; }
+  .datepicker .ui-widget .ui-widget-content {
+    border-radius: 0px !important;
+    height: 215px !important; }
+  .datepicker.top {
+    bottom: 100%; }
+  .datepicker.bottom {
+    top: 100%; }
+  .datepicker.left {
+    left: 0px; }
+  .datepicker.right {
+    right: 0px; }
+
 #page-dashboard .navbar {
   margin: 0px; }
 
