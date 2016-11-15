@@ -326,6 +326,24 @@ form:not(.navbar-form):not(.form-inline) .form-group {
   .datepicker.right {
     right: 0px; }
 
+#page-dashboard #dashboard-loading {
+  background: rgba(145, 216, 247, 0.5);
+  color: #FFFFFF; }
+  #page-dashboard #dashboard-loading .wrapper-outer {
+    display: table;
+    width: 100%;
+    height: 100%; }
+    #page-dashboard #dashboard-loading .wrapper-outer .wrapper-inner {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+  #page-dashboard #dashboard-loading .circle-wrapper {
+    background: rgba(0, 175, 239, 0.8);
+    border-radius: 100%;
+    display: inline-block;
+    width: 250px;
+    height: 250px; }
+
 #page-dashboard .navbar {
   margin: 0px; }
 
