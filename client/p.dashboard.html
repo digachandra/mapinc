@@ -39,16 +39,23 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand inverse">
+            <a id="navbar-brand" class="navbar-brand inverse">
               <img class="logo circle" src="asset/image/logo-circle-theme.png" />
               <img class="logo block" src="asset/image/logo-block-theme.png" />
             </a>
           </div>
           <div id="mapinc-navbar-top" class="collapse navbar-collapse">
-            <form class="navbar-form navbar-right">
+            <ul id="navbar-action" class="nav navbar-nav navbar-right">
+              <li class="inverse">
+                <a>
+                  <i class="fa fa-map-o icon" aria-hidden="true"></i><span>Map List</span>
+                </a>
+              </li>
+            </ul>
+            <form id="search-bar" class="navbar-form navbar-right">
               <div class="form-group">
-                <div class="input-group transparent theme">
-                  <input id="txt-search" type="text" class="form-control text-right text-search" autocomplete="off" placeholder="Search">
+                <div class="input-group theme">
+                  <input id="txt-dashboard-search" type="text" class="form-control text-right text-search" autocomplete="off" placeholder="Search">
                   <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
                 </div>
               </div>
@@ -212,7 +219,7 @@
   <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/lodash/4.16.2/lodash.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_muvCxO4FqTWepNvaArWY1CmrSAyRp3w&callback=initMap&libraries=drawing" async="" defer="defer"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_muvCxO4FqTWepNvaArWY1CmrSAyRp3w&callback=initMap&libraries=drawing,places&sensor=false" async="" defer="defer"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="asset/js/jquery.nanoscroller.min.js"></script>
   <script src="asset/js/core.min.js"></script>

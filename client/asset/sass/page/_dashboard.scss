@@ -1,4 +1,38 @@
 #page-dashboard{
+	#navbar-brand{
+		background: $color-shade-1;
+		width: 134px;
+	}
+	#navbar-action{
+		background: $color-shade-1;
+		width: 107px;
+		li{
+			width: 100%;
+		}
+	}
+	#search-bar{
+		margin: 0px 0px;
+		padding: 0px 2px;
+		@include calculate-width(100%, 241px);
+		height: 50px;
+		.form-group{
+			background: $color-shade-1;
+			width: 100%;
+			.input-group{
+				width: 100%;
+				input,
+				.input-group-addon{
+					background: transparent;
+					border: 0px;
+					height: 50px;
+				}
+				.input-group-addon{
+					color: $color-main-1;
+					width: 20px;
+				}
+			}
+		}
+	}
 	#dashboard-loading{
 		background: $color-main-4;
 		color: $color-shade-1;

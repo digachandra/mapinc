@@ -326,6 +326,38 @@ form:not(.navbar-form):not(.form-inline) .form-group {
   .datepicker.right {
     right: 0px; }
 
+#page-dashboard #navbar-brand {
+  background: #FFFFFF;
+  width: 134px; }
+
+#page-dashboard #navbar-action {
+  background: #FFFFFF;
+  width: 107px; }
+  #page-dashboard #navbar-action li {
+    width: 100%; }
+
+#page-dashboard #search-bar {
+  margin: 0px 0px;
+  padding: 0px 2px;
+  width: -moz-calc(100% - 241px);
+  width: -webkit-calc(100% - 241px);
+  width: -o-calc(100% - 241px);
+  width: calc(100% - 241px);
+  height: 50px; }
+  #page-dashboard #search-bar .form-group {
+    background: #FFFFFF;
+    width: 100%; }
+    #page-dashboard #search-bar .form-group .input-group {
+      width: 100%; }
+      #page-dashboard #search-bar .form-group .input-group input,
+      #page-dashboard #search-bar .form-group .input-group .input-group-addon {
+        background: transparent;
+        border: 0px;
+        height: 50px; }
+      #page-dashboard #search-bar .form-group .input-group .input-group-addon {
+        color: #00AFEF;
+        width: 20px; }
+
 #page-dashboard #dashboard-loading {
   background: rgba(145, 216, 247, 0.5);
   color: #FFFFFF; }
