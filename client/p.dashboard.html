@@ -120,15 +120,22 @@
                 </div>
                 <hr />
                 <div class="form-group">
-                  <label for="0000-condition">Sales Condition</label>
+                  <label for="0000-name">Field Name</label>
+                  <input id="0000-name" type="text" class="form-control" placeholder="Name" min="0" required>
+                </div>
+                <div class="form-group">
+                  <label for="0000-condition">Condition</label>
                   <select id="0000-condition" class="form-control" required>
                     <option value="GT">Greater than</option>
                     <option value="LT">Less than</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="0000-number">Sales</label>
-                  <input id="0000-number" type="number" class="form-control" placeholder="Number" min="0" required>
+                  <label for="0000-target">Target Value</label>
+                  <input id="0000-target" type="number" class="form-control" placeholder="Number" min="0" required>
+                </div>
+                <div class="form-group">
+                  <div id="0000-status" class="alert hidden" role="alert">...</div>
                 </div>
                 <hr />
                 <div class="form-group">
