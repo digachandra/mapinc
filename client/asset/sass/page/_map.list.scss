@@ -1,0 +1,140 @@
+#page-maplist{
+	#maplist-cover{
+		background: $color-main-4;
+	}
+	#maplist-content{
+		position: relative;
+		min-height: 100%;
+		z-index: 10;
+		.container{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			.container-wrapper{
+				background: $color-main-5;
+				padding: 60px 20px;
+				position: relative;
+				min-height: 100%;
+			}
+		}
+		ul#content-list{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			li{
+				border-radius: 5px;
+				display: inline-block;
+				margin: 5px;
+				@include calculate-width(100%/4, 13px)
+				height: 250px;
+				> a{
+					border-radius: 5px;
+					display: table;
+					text-decoration: none;
+					width: 100%;
+					height: 100%;
+					@include transition(all, ease-in, 0.1s);
+					> .wrapper{
+						display: table-cell;
+						vertical-align: middle;
+						text-align: center;
+					}
+				}
+				&:first-child{
+					.title{
+						margin-top: 10px;
+					}
+					> a{
+						border: 1px dashed $color-shade-2;
+						&:hover{
+							background: $color-shade-1;
+						}
+					}
+				}
+				&:nth-child(n+2){
+					background: $color-shade-2;
+					> a{
+						border: 1px solid $color-shade-2;
+						&:hover{
+							background: $color-main-2;
+							border-color: $color-main-2;
+						}
+					}
+				}
+			}
+		}
+	}
+	.navbar{
+		margin: 0px;
+	}
+	.container{
+		padding: 0px;
+		width: 100%;
+		.container-wrapper{
+			margin: 0px 15%;
+			width: 70%;
+		}
+	}
+	.navbar-brand{
+		margin: 0px;
+	}
+	.detail-wrapper{
+		background: $color-shade-1;
+		border-left: 2px solid $color-main-1;
+		position: fixed;
+		top: 0px;
+		right: -30%;
+		width: 30%;
+		height: 100%;
+		z-index: 99999;
+		.wrapper-content{
+			padding: 50px 0px;
+			height: 100%;
+			.content-inner{
+				padding: 10px;
+			}
+		}
+		.wrapper-action{
+			position: absolute;
+			width: 100%;
+			height: 50px;
+			.wrapper-outer{
+				display: table;
+				width: 100%;
+				height: 100%;
+				.wrapper-inner{
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			.btn-action,
+			.block{
+				display: block;
+				padding: 6px 12px;
+				width: 100%;
+				height: 50px;
+			}
+			&.top{
+				border-bottom: 1px solid $color-shade-2;
+				top: 0px;
+			}
+			&.bottom{
+				border-top: 1px solid $color-shade-2;
+				bottom: 0px;
+			}
+		}
+	}
+	.container-wrapper,
+	.detail-wrapper{
+		@include transition(all, linear, 0.2s)
+	}
+	&.open-detail{
+		.container-wrapper{
+			margin: 0px;
+		}
+		.detail-wrapper{
+			right: 0px;
+		}
+	}
+}
