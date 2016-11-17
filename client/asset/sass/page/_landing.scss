@@ -94,8 +94,8 @@
 		}
 	}
 	#section-founders{
-		color: $color-shade-1;
-		background: $color-shade-5;
+		color: $color-shade-5;
+		background: $color-shade-1;
 		padding-top: 100px;
 		ul#founders-list{
 			list-style: none;
@@ -112,16 +112,21 @@
 					width: 100%;
 				}
 				.detail{
-					color: $color-shade-1;
+					background: $color-main-4;
+					color: $color-shade-5;
 					text-align: center;
+					margin: 0px auto;
+					padding: 5px;
 					position: absolute;
+					left: 0px;
+					right: 0px;
 					bottom: 10px;
-					width: 100%;
+					width: 80%;
 					span{
 						display: block;
 					}
 					a{
-						color: $color-shade-1 !important;
+						color: $color-shade-5 !important;
 						font-size: 12px;
 						text-decoration: none !important;
 					}
