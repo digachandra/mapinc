@@ -13,6 +13,7 @@
 	#search-bar{
 		margin: 0px 0px;
 		padding: 0px 2px;
+		position: relative;
 		@include calculate-width(100%, 241px);
 		height: 50px;
 		.form-group{
@@ -30,6 +31,22 @@
 					color: $color-main-1;
 					width: 20px;
 				}
+			}
+		}
+		#search-autocomplete{
+			background: $color-shade-1;
+			border: 0px;
+			border-radius: 0px;
+			box-shadow: none;
+			display: block;
+			margin-top: 0px;
+			opacity: 0;
+			left: 0px;
+			width: 100%;
+			@include transition(all, linear, 0.2s);
+			&.open{
+				margin-top: 5px;
+				opacity: 1;
 			}
 		}
 	}
