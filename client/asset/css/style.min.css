@@ -688,48 +688,62 @@ input[type=radio] {
 #page-maplist.open-detail .detail-wrapper {
   right: 0px; }
 
-#page-signin .separate-wrapper .separate-box, #page-signup .separate-wrapper .separate-box, #page-forgot .separate-wrapper .separate-box {
+#page-signin .separate-wrapper .separate-box, #page-signup .separate-wrapper .separate-box, #page-forgot-pass .separate-wrapper .separate-box {
   float: left;
   position: relative;
   width: 50%;
   height: 100%; }
 
-#page-signin .separate-wrapper .content-box, #page-signup .separate-wrapper .content-box, #page-forgot .separate-wrapper .content-box {
+#page-signin .separate-wrapper .content-box, #page-signup .separate-wrapper .content-box, #page-forgot-pass .separate-wrapper .content-box {
   border-right: 0px;
   margin: 50px;
   margin-right: 0px;
   position: relative; }
-  #page-signin .separate-wrapper .content-box .content-header, #page-signup .separate-wrapper .content-box .content-header, #page-forgot .separate-wrapper .content-box .content-header {
+  #page-signin .separate-wrapper .content-box .content-header, #page-signup .separate-wrapper .content-box .content-header, #page-forgot-pass .separate-wrapper .content-box .content-header {
     padding: 20px 30px; }
-  #page-signin .separate-wrapper .content-box .content-body, #page-signup .separate-wrapper .content-box .content-body, #page-forgot .separate-wrapper .content-box .content-body {
+  #page-signin .separate-wrapper .content-box .content-body, #page-signup .separate-wrapper .content-box .content-body, #page-forgot-pass .separate-wrapper .content-box .content-body {
     padding: 20px 30px; }
-  #page-signin .separate-wrapper .content-box form .form-action, #page-signup .separate-wrapper .content-box form .form-action, #page-forgot .separate-wrapper .content-box form .form-action {
+  #page-signin .separate-wrapper .content-box form .form-action, #page-signup .separate-wrapper .content-box form .form-action, #page-forgot-pass .separate-wrapper .content-box form .form-action {
     font-size: 13px;
     margin-top: 10px; }
+  #page-signin .separate-wrapper .content-box form .input-group .input-group-addon, #page-signup .separate-wrapper .content-box form .input-group .input-group-addon, #page-forgot-pass .separate-wrapper .content-box form .input-group .input-group-addon {
+    border-radius: 0px;
+    background: #FFFFFF; }
+    #page-signin .separate-wrapper .content-box form .input-group .input-group-addon a, #page-signup .separate-wrapper .content-box form .input-group .input-group-addon a, #page-forgot-pass .separate-wrapper .content-box form .input-group .input-group-addon a {
+      color: #787878 !important;
+      font-size: 12px; }
+  #page-signin .separate-wrapper .content-box form .input-group.with-addon-left input, #page-signup .separate-wrapper .content-box form .input-group.with-addon-left input, #page-forgot-pass .separate-wrapper .content-box form .input-group.with-addon-left input {
+    border-left: 0px; }
+  #page-signin .separate-wrapper .content-box form .input-group.with-addon-left .input-group-addon, #page-signup .separate-wrapper .content-box form .input-group.with-addon-left .input-group-addon, #page-forgot-pass .separate-wrapper .content-box form .input-group.with-addon-left .input-group-addon {
+    border-right: 0px; }
+  #page-signin .separate-wrapper .content-box form .input-group.with-addon-right input, #page-signup .separate-wrapper .content-box form .input-group.with-addon-right input, #page-forgot-pass .separate-wrapper .content-box form .input-group.with-addon-right input {
+    border-right: 0px; }
+  #page-signin .separate-wrapper .content-box form .input-group.with-addon-right .input-group-addon, #page-signup .separate-wrapper .content-box form .input-group.with-addon-right .input-group-addon, #page-forgot-pass .separate-wrapper .content-box form .input-group.with-addon-right .input-group-addon {
+    border-left: 0px; }
 
-#page-signin .separate-wrapper.blue .cover-block, #page-signup .separate-wrapper.blue .cover-block, #page-forgot .separate-wrapper.blue .cover-block {
+#page-signin .separate-wrapper.blue .cover-block, #page-signup .separate-wrapper.blue .cover-block, #page-forgot-pass .separate-wrapper.blue .cover-block {
   background: rgba(0, 175, 239, 0.8); }
 
-#page-signin .separate-wrapper.blue .content-box .content-header, #page-signup .separate-wrapper.blue .content-box .content-header, #page-forgot .separate-wrapper.blue .content-box .content-header {
+#page-signin .separate-wrapper.blue .content-box .content-header, #page-signup .separate-wrapper.blue .content-box .content-header, #page-forgot-pass .separate-wrapper.blue .content-box .content-header {
   background: #00AFEF;
   color: #FFFFFF; }
 
-#page-signin .separate-wrapper.blue .content-box .content-body, #page-signup .separate-wrapper.blue .content-box .content-body, #page-forgot .separate-wrapper.blue .content-box .content-body {
+#page-signin .separate-wrapper.blue .content-box .content-body, #page-signup .separate-wrapper.blue .content-box .content-body, #page-forgot-pass .separate-wrapper.blue .content-box .content-body {
   background: #FFFFFF; }
 
-#page-signin .separate-wrapper.white, #page-signup .separate-wrapper.white, #page-forgot .separate-wrapper.white {
+#page-signin .separate-wrapper.white, #page-signup .separate-wrapper.white, #page-forgot-pass .separate-wrapper.white {
   color: #FFFFFF; }
-  #page-signin .separate-wrapper.white a, #page-signup .separate-wrapper.white a, #page-forgot .separate-wrapper.white a {
+  #page-signin .separate-wrapper.white a, #page-signup .separate-wrapper.white a, #page-forgot-pass .separate-wrapper.white a {
     color: #FFFFFF !important; }
-  #page-signin .separate-wrapper.white .cover-block, #page-signup .separate-wrapper.white .cover-block, #page-forgot .separate-wrapper.white .cover-block {
+  #page-signin .separate-wrapper.white .cover-block, #page-signup .separate-wrapper.white .cover-block, #page-forgot-pass .separate-wrapper.white .cover-block {
     background: rgba(255, 255, 255, 0.9); }
-  #page-signin .separate-wrapper.white .content-box .content-header, #page-signup .separate-wrapper.white .content-box .content-header, #page-forgot .separate-wrapper.white .content-box .content-header {
+  #page-signin .separate-wrapper.white .content-box .content-header, #page-signup .separate-wrapper.white .content-box .content-header, #page-forgot-pass .separate-wrapper.white .content-box .content-header {
     background: #FFFFFF;
     color: #00AFEF; }
-  #page-signin .separate-wrapper.white .content-box .content-body, #page-signup .separate-wrapper.white .content-box .content-body, #page-forgot .separate-wrapper.white .content-box .content-body {
+  #page-signin .separate-wrapper.white .content-box .content-body, #page-signup .separate-wrapper.white .content-box .content-body, #page-forgot-pass .separate-wrapper.white .content-box .content-body {
     background: #00AFEF; }
 
-#page-signin .background-block, #page-signup .background-block, #page-forgot .background-block {
+#page-signin .background-block, #page-signup .background-block, #page-forgot-pass .background-block {
   background: #9A9A9A;
   background-position: center center;
   background-repeat: no-repeat !important;
@@ -740,12 +754,12 @@ input[type=radio] {
   width: 100%;
   height: 100%; }
 
-#page-signin .cover-block, #page-signup .cover-block, #page-forgot .cover-block {
+#page-signin .cover-block, #page-signup .cover-block, #page-forgot-pass .cover-block {
   position: relative;
   width: 100%;
   height: 100%; }
 
-#page-signin:after, #page-signup:after, #page-forgot:after {
+#page-signin:after, #page-signup:after, #page-forgot-pass:after {
   clear: both;
   content: " ";
   display: block;

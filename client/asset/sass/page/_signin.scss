@@ -1,4 +1,4 @@
-#page-signin, #page-signup, #page-forgot{
+#page-signin, #page-signup, #page-forgot-pass{
 	.separate-wrapper{
 		.separate-box{
 			float: left;
@@ -21,6 +21,32 @@
 				.form-action{
 					font-size: 13px;
 					margin-top: 10px;
+				}
+				.input-group{
+					.input-group-addon{
+						border-radius: 0px;
+						background: $color-shade-1;
+						a{
+							color: $color-shade-4 !important;
+							font-size: 12px;
+						}
+					}
+					&.with-addon-left{
+						input{
+							border-left: 0px;
+						}
+						.input-group-addon{
+							border-right: 0px;
+						}
+					}
+					&.with-addon-right{
+						input{
+							border-right: 0px;
+						}
+						.input-group-addon{
+							border-left: 0px;
+						}
+					}
 				}
 			}
 		}
