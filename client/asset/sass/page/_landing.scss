@@ -1,0 +1,148 @@
+#page-landing{
+	background: $color-main-1;
+	.header{
+		position: relative;
+		height: 600px;
+		.google-map{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			> .map-block{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.header-content{
+			position: relative;
+			text-align: center;
+		}
+	}
+	.content{
+		background: $color-shade-1;
+		margin-top: -40px;
+		position: relative;
+		.content-action{
+			padding: 20px 0px;
+		}
+		.content-wrapper{
+			@include background-cover();
+			position: relative;
+			&:after{
+				@include clear-both();
+			}
+			.floating-box{
+				color: $color-shade-1;
+				margin: 100px 70px;
+				.title-block{
+					display: inline-block;
+					padding: 10px 20px;
+				}
+				.content-block{
+					margin-top: 20px;
+				}
+				&.blue{
+					.title-block{
+						background: $color-main-1;
+						color: $color-shade-1;
+					}
+				}
+				&.white{
+					.title-block{
+						background: $color-shade-1;
+						color: $color-main-1;
+					}
+				}
+			}
+		}
+		.title-block{
+			.inline{
+				display: inline-block;
+				& + .inline{
+					margin-left: 5px;
+				}
+			}
+			.light{
+				font-weight: lighter;
+			}
+		}
+	}
+	.footer{
+		background: $color-shade-6;
+		color: $color-shade-1;
+		padding: 70px 0px;
+		ul.menu-list{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			li{
+				a{
+					color: $color-shade-3 !important;
+					font-size: 13px;
+					text-decoration: none;
+					&:hover{
+						color: $color-shade-2 !important;
+					}
+				}
+				&:first-child{
+					font-weight: bold;
+					margin-bottom: 10px;
+				}
+				&:nth-child(n+2){
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+	#section-founders{
+		color: $color-shade-1;
+		background: $color-shade-5;
+		padding-top: 100px;
+		ul#founders-list{
+			list-style: none;
+			margin: 0px;
+			margin-top: 50px;
+			padding: 0px;
+			width: 100%;
+			li{
+				float: left;
+				position: relative;
+				@include calculate-width(100%/5, 0px);
+				img{
+					opacity: 0.6;
+					width: 100%;
+				}
+				.detail{
+					color: $color-shade-1;
+					text-align: center;
+					position: absolute;
+					bottom: 10px;
+					width: 100%;
+					span{
+						display: block;
+					}
+					a{
+						color: $color-shade-1 !important;
+						font-size: 12px;
+						text-decoration: none !important;
+					}
+				}
+			}
+			&:after(){
+				@include clear-both();
+			}
+		}
+	}
+	#section-copyright{
+		span{
+			color: $color-shade-3;
+			display: block;
+			font-weight: bold;
+			font-size: 12px;
+		}
+		img{
+			margin-top: 5px;
+			opacity: 0.2;
+			height: 30px;
+		}
+	}
+}
