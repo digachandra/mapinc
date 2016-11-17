@@ -712,7 +712,6 @@ input[type=radio] {
 
 #page-signin .separate-wrapper.blue .content-box .content-header, #page-signup .separate-wrapper.blue .content-box .content-header, #page-forgot .separate-wrapper.blue .content-box .content-header {
   background: #00AFEF;
-  border-top: 2px solid #FFFFFF;
   color: #FFFFFF; }
 
 #page-signin .separate-wrapper.blue .content-box .content-body, #page-signup .separate-wrapper.blue .content-box .content-body, #page-forgot .separate-wrapper.blue .content-box .content-body {
@@ -726,7 +725,6 @@ input[type=radio] {
     background: rgba(255, 255, 255, 0.9); }
   #page-signin .separate-wrapper.white .content-box .content-header, #page-signup .separate-wrapper.white .content-box .content-header, #page-forgot .separate-wrapper.white .content-box .content-header {
     background: #FFFFFF;
-    border-top: 2px solid #00AFEF;
     color: #00AFEF; }
   #page-signin .separate-wrapper.white .content-box .content-body, #page-signup .separate-wrapper.white .content-box .content-body, #page-forgot .separate-wrapper.white .content-box .content-body {
     background: #00AFEF; }
