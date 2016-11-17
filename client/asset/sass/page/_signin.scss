@@ -1,0 +1,71 @@
+#page-signin, #page-signup, #page-forgot{
+	.separate-wrapper{
+		.separate-box{
+			float: left;
+			position: relative;
+			width: 50%;
+			height: 100%;
+			// .separate-action{
+			// 	background: $color-shade-1;
+			// 	padding: 2px;
+			// 	position: absolute;
+			// 	top: 0px;
+			// 	width: 100%;
+			// 	height: 50px;
+			// 	.action-wrapper{
+			// 		background: $color-main-1;
+			// 		display: block;
+			// 		height: 46px;
+			// 	}
+			// }
+		}
+		.content-box{
+			border-right: 0px;
+			margin: 50px;
+			margin-right: 0px;
+			padding: 30px;
+			form{
+				.form-action{
+					font-size: 13px;
+					margin-top: 10px;
+				}
+			}
+		}
+		&.blue{
+			.cover-block{
+				background: $color-main-3;
+			}
+			.content-box{
+				background: $color-shade-1;
+			}
+		}
+		&.white{
+			color: $color-shade-1;
+			a{
+				color: $color-shade-1 !important;
+			}
+			.cover-block{
+				background: $color-main-5;
+			}
+			.content-box{
+				background: $color-main-1;
+			}
+		}
+	}
+	.background-block{
+		@include background-cover($color-shade-3);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
+	.cover-block{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	&:after{
+		@include clear-both();
+	}
+}

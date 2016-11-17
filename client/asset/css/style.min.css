@@ -259,6 +259,10 @@ form:not(.navbar-form):not(.form-inline) .form-group {
   width: 100%;
   height: 100%; }
 
+.alert {
+  border-radius: 0px;
+  padding: 10px 15px; }
+
 .modal {
   z-index: 100001; }
   @media (max-width: 767px) {
@@ -679,3 +683,55 @@ form:not(.navbar-form):not(.form-inline) .form-group {
 
 #page-maplist.open-detail .detail-wrapper {
   right: 0px; }
+
+#page-signin .separate-wrapper .separate-box, #page-signup .separate-wrapper .separate-box, #page-forgot .separate-wrapper .separate-box {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%; }
+
+#page-signin .separate-wrapper .content-box, #page-signup .separate-wrapper .content-box, #page-forgot .separate-wrapper .content-box {
+  border-right: 0px;
+  margin: 50px;
+  margin-right: 0px;
+  padding: 30px; }
+  #page-signin .separate-wrapper .content-box form .form-action, #page-signup .separate-wrapper .content-box form .form-action, #page-forgot .separate-wrapper .content-box form .form-action {
+    font-size: 13px;
+    margin-top: 10px; }
+
+#page-signin .separate-wrapper.blue .cover-block, #page-signup .separate-wrapper.blue .cover-block, #page-forgot .separate-wrapper.blue .cover-block {
+  background: rgba(0, 175, 239, 0.8); }
+
+#page-signin .separate-wrapper.blue .content-box, #page-signup .separate-wrapper.blue .content-box, #page-forgot .separate-wrapper.blue .content-box {
+  background: #FFFFFF; }
+
+#page-signin .separate-wrapper.white, #page-signup .separate-wrapper.white, #page-forgot .separate-wrapper.white {
+  color: #FFFFFF; }
+  #page-signin .separate-wrapper.white a, #page-signup .separate-wrapper.white a, #page-forgot .separate-wrapper.white a {
+    color: #FFFFFF !important; }
+  #page-signin .separate-wrapper.white .cover-block, #page-signup .separate-wrapper.white .cover-block, #page-forgot .separate-wrapper.white .cover-block {
+    background: rgba(255, 255, 255, 0.9); }
+  #page-signin .separate-wrapper.white .content-box, #page-signup .separate-wrapper.white .content-box, #page-forgot .separate-wrapper.white .content-box {
+    background: #00AFEF; }
+
+#page-signin .background-block, #page-signup .background-block, #page-forgot .background-block {
+  background: #9A9A9A;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+
+#page-signin .cover-block, #page-signup .cover-block, #page-forgot .cover-block {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+#page-signin:after, #page-signup:after, #page-forgot:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0px; }
