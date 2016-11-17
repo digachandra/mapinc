@@ -9,3 +9,7 @@ form{
     }
   }
 }
+input[type=radio]{
+  border: 2px solid $color-shade-1;
+  outline: none !important;
+}

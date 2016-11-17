@@ -175,6 +175,10 @@ form:not(.navbar-form):not(.form-inline) .form-group {
   form:not(.navbar-form):not(.form-inline) .form-group + .btn {
     margin-top: 15px; }
 
+input[type=radio] {
+  border: 2px solid #FFFFFF;
+  outline: none !important; }
+
 .navbar.theme .navbar-toggle {
   border: 2px solid #FFFFFF; }
   .navbar.theme .navbar-toggle .icon-bar {
